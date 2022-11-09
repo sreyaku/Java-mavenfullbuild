@@ -1,4 +1,4 @@
- FROM openjdk:8
+ FROM openjdk:11
  COPY target/spring-boot-hello-world-example-0.0.1-SNAPSHOT.jar .
  RUN dir
  EXPOSE 8082
