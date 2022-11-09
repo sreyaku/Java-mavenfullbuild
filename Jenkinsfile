@@ -4,7 +4,7 @@ pipeline{
         stage('gitclone'){
             agent any
             steps{
-                git credentialsId: 'bc010765-2802-482d-8502-5f629f70228a', url: ' https://github.com/sreyaku/Java-mavenfullbuild.git'
+                git credentialsId: 'bc010765-2802-482d-8502-5f629f70228a', url: 'https://github.com/sreyaku/Java-mavenfullbuild.git'
             }
         }
         stage('compile'){
