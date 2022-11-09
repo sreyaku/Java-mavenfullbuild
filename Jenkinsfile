@@ -30,10 +30,10 @@ pipeline{
             steps{    
                 bat '''
                 docker container stop yourcontainer
-            docker container rm yourcontainer
-            docker image build -t testimage:1.0 .
-            docker run -d -p 80:8082 --name yourcontainer testimage:1.0
-            '''
+                docker container rm yourcontainer
+                docker image build -t testimage:1.0 .
+                docker run -d -p 80:8082 --name yourcontainer testimage:1.0
+                '''
         }
     }    
     }
